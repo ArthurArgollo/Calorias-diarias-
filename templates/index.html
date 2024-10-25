@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Calorias</h1>
+        <form action="/sexo" method="post">
+            <label>Sexo:</label>
+            <select name="sexo" required>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+
+            <label>Peso (kg):</label>
+            <input type="number" name="peso" step="0.1" required>
+
+            <label>Altura (m):</label>
+            <input type="number" name="altura" step="0.01" required>
+
+            <label>Idade:</label>
+            <input type="number" name="idade" required>
+
+            <label>Nível de Atividade Física:</label>
+            <select name="atividade" required>
+                <option value="S">Sedentário</option>
+                <option value="L">Levemente ativo</option>
+                <option value="M">Moderadamente ativo</option>
+                <option value="A">Altamente ativo</option>
+                <option value="E">Extremamente ativo</option>
+            </select>
+
+            <label>Objetivo:</label>
+            <select name="objetivo" required>
+                <option value="G">Ganhar Peso</option>
+                <option value="P">Perder Peso</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        {% if resultado is not none %}
+            <h2>Você deve consumir {{ resultado }} calorias por dia.</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
