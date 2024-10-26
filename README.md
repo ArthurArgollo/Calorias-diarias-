@@ -15,5 +15,5 @@ Este projeto é uma calculadora de calorias simples criada com Python e Flask.
 
 ## Execução 
 1. Abra o cmd na pasta do projeto e execute o comando:
-   python app.py
+   python calculo2.py
 2. Abra o navegador e acesse o endereço que irá aparecer no cmd para ver a calculadora em ação.
