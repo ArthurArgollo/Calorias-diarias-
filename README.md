@@ -11,7 +11,7 @@ Este projeto é uma calculadora de calorias simples criada com Python e Flask.
 2. Navegue até a pasta do projeto.
 3. Instale as dependências executando:
    ```bash
-   pip install -r requirements.txt
+   pip install -r requerimentos.txt
 
 ## Execução 
 1. Abra o cmd na pasta do projeto e execute o comando:
